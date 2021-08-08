@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="author" content="Kia Christine">
     <meta name="description" content="Kia Christine UX/UI Designer dancer choreographer movement specialist Minneapolis MN">
@@ -22,21 +28,21 @@
     </header>
     <main>
 <!--Hero-->
-        <div>
+        <div id="hero">
           <div>
             <h1>Hi, my name is <span>Kia</span>. I am a UX/UI designer, dancer, choreographer and movement specialist.</h1>
             <p>Aristically driven and deeply empathetic, my work is a fusion of my background in the arts, with my design experiences in print, product and digital spaces.</p>
             <picture>
-              <source srcset="img/headshots/headshot_2@jpg" media="(max-width: 767px)">
+              <source srcset="img/headshots/headshot_2.jpg" media="(max-width: 767px)">
                 <img src="img/headshots/headshot_2@2x.jpg" alt="Kia Christine's Headshot">
             </picture>
             <div>
-              <a href="#">Learn More</a>
+              <a href="#" class="button">Learn More</a>
             </div>
           </div>
         </div>
 <!--Design-->
-        <div>
+        <div id="design">
           <div>
             <h1>Design</h1>
             <h3>Projects</h3>
@@ -70,7 +76,7 @@
           </div>
         </div> <!--End Design Projects section-->
 <!--Dance-->
-        <div>
+        <div id="dance">
           <div>
             <h1>Dance</h1>
             <h3>Peformance, Choreography, Training</h3>
@@ -111,8 +117,7 @@
             <a href="#">Learn More</a>
           </div>
         </div> <!--End Dance section-->
-        <div>
-<!--InTheWild-->
+        <div id="wild">
           <h1>#InTheWild</h1>
           <picture>
             <source srcset="img/inthewild/inthewild_nk.jpg" media="(max-width: 767px)">
