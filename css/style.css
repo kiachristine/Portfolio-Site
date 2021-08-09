@@ -6,7 +6,7 @@ Colors
 */
 body {
   background-color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -14,6 +14,7 @@ body {
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
+  font-family: 'Lato', sans-serif;
 }
 h1 {
   font-size: 2.75em;
