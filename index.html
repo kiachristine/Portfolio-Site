@@ -13,10 +13,9 @@
     <title>Kia Christine Design and Dance</title>
   </head>
   <body>
-<!--Navigation-->
-    <header>
-      <div>
-        <a href="index.html">Kia Christine</a>
+    <header><!--Navigation-->
+      <div class="container">
+        <a href="index.html" class="logo">Kia Christine</a>
         <nav>
           <ul>
             <li><a href="design.html"> Design </a></li>
@@ -27,29 +26,28 @@
       </div>
     </header>
     <main>
-<!--Hero-->
-        <div id="hero">
+      <div id="hero"><!--Hero/Intro Section-->
+        <div class="container row">
+          <h1>Hi, my name is <span>Kia</span>.</h1>
+          <h2>I am a UX/UI designer, dancer, choreographer and movement specialist.</h2>
+          <p>Aristically driven and deeply empathetic, my work is a fusion of my background in the arts, with my design experiences in print, product and digital spaces.</p>
+          <picture>
+            <source srcset="img/headshots/headshot_2.jpg" media="(max-width: 767px)">
+              <img src="img/headshots/headshot_2@2x.jpg" alt="Kia Christine's Headshot">
+          </picture>
           <div>
-            <h1>Hi, my name is <span>Kia</span>. I am a UX/UI designer, dancer, choreographer and movement specialist.</h1>
-            <p>Aristically driven and deeply empathetic, my work is a fusion of my background in the arts, with my design experiences in print, product and digital spaces.</p>
-            <picture>
-              <source srcset="img/headshots/headshot_2.jpg" media="(max-width: 767px)">
-                <img src="img/headshots/headshot_2@2x.jpg" alt="Kia Christine's Headshot">
-            </picture>
-            <div>
-              <a href="about.html" class="button">Learn More</a>
-            </div>
+            <a href="about.html" class="button">Learn More</a>
           </div>
         </div>
-<!--Design-->
-        <div id="design">
-          <div>
-            <h2>Design</h2>
-            <h3>Projects</h3>
-            <p>Here are a few featured projects I have worked on in the past. Please note that some of these projects are still a work in progress. These project examples range from personal work to print design, digital design and product development.</p>
-          </div>
-    <!--Infinite-->
-          <div><a href="#">
+      </div>
+      <div id="design"><!--Design Section-->
+        <div class="container">
+          <h2>Design</h2>
+          <h3>Projects</h3>
+          <p>Here are a few featured projects I have worked on in the past. Please note that some of these projects are still a work in progress. These project examples range from personal work to print design, digital design and product development.</p>
+        </div>
+        <div class="container row">
+          <div id="infinite"><a href="#"><!--Infinite Project-->
             <h4>Infinite</h4>
             <p>UX/UI Design</p>
             <picture>
@@ -59,8 +57,7 @@
             <p>INFINITE is an app designed to aid anxiety and stress through the synchronization of body and mind. I  was responsible for the responsive web application design, research, testing and implementation of the entire project.</p>
             </a>
           </div>
-    <!--Kelle-->
-          <div><a href="kelleco.html">
+          <div id="kelle"><a href="kelleco.html"><!--Kelle Project-->
             <h4>Kellé Company</h4>
             <p>Print Design</p>
             <picture>
@@ -70,19 +67,19 @@
             <p>Kellé Company, a leader in the performance dancewear industry, designs and manufactures apparel for dance recitals and competitions. I am the main chorographer and on set designer for all catalog production.</p>
             </a>
           </div>
-          <div>  <!--create link to project page-->
+          <div id="project-page-link">  <!--link to project page-->
             <a href="#">View All Projects</a>
           </div>
-        </div> <!--End Design Projects section-->
-<!--Dance-->
-        <div id="dance">
-          <div>
-            <h2>Dance</h2>
-            <h3>Peformance, Choreography, Training</h3>
-            <p>With an extensive background in dance and the fine arts, with a degree from Loyola Marymount University in Los Angeles, CA, my work specializes in performance, choreography, and movement training. Check out my work below!</p>
-          </div>
-    <!--Peformance-->
-          <div><a href="#">
+        </div><!--End Project Columns-->
+      </div> <!--End Design Projects section-->
+      <div id="dance"><!--Dance-->
+        <div class="container">
+          <h2>Dance</h2>
+          <h3>Peformance, Choreography, Training</h3>
+          <p>With an extensive background in dance and the fine arts, with a degree from Loyola Marymount University in Los Angeles, CA, my work specializes in performance, choreography, and movement training. Check out my work below!</p>
+        </div>
+        <div class="container row"><!--Start 3 Dance Columns-->
+          <div id="performance"><a href="#"><!--Peformance-->
             <h4>Performance</h4>
             <picture>
               <source srcset="img/dance/performance/proxy_2019-jump.jpg" media="(max-width: 767px)">
@@ -91,8 +88,7 @@
             <p>Works that I have appeared in exist in both the commercial and concert realms of dance. I am currently performing with Crash Dance Productions, a well-known contemporary company out of Minneapolis, MN.</p>
             </a>
           </div>
-    <!--Choreography-->
-          <div><a href="#">
+          <div id="choreography"><a href="#"><!--Choreography-->
             <h4>Choreography</h4>
             <picture>
               <source srcset="img/dance/choreography/choreo_soldier.jpg" media="(max-width: 767px)">
@@ -101,8 +97,7 @@
             <p>Holding numerous choreographic awards and accolades, my work ranges from concert dance pieces and full length shows, to high school and collegiate regional and national competitive pieces.</p>
             </a>
           </div>
-    <!--Training-->
-          <div><a href="#">
+          <div id="training"><a href="#"><!--Training-->
             <h4>Training</h4>
             <picture>
               <source srcset="img/dance/training/train_pilates-chair.jpg" media="(max-width: 767px)">
@@ -111,50 +106,45 @@
             <p>With over 10+ years of teaching and training, I specialize in helping the body and mind to obtain longevity, mobility and strength through progressive functional fitness and dance training methods.</p>
             </a>
           </div>
-          <!--Link-->
-          <div>
+          <div id="dance-page-link"><!--Link to Dance Page-->
             <a href="#">Learn More</a>
           </div>
-        </div> <!--End Dance section-->
-        <div id="wild">
-          <h2>#InTheWild</h2>
-          <picture>
-            <source srcset="img/inthewild/inthewild_nk.jpg" media="(max-width: 767px)">
-              <img src="img/inthewild/inthewild_nk.jpg" alt="Training Image">
-          </picture>
-          <picture>
-            <source srcset="img/inthewild/inthewild_lab-dress.jpg" media="(max-width: 767px)">
-              <img src="img/inthewild/inthewild_lab-dress.jpg" alt="Training Image">
-          </picture>
-          <picture>
-            <source srcset="img/inthewild/inthewild_crashco.jpg" media="(max-width: 767px)">
-              <img src="img/inthewild/inthewild_crashco.jpg" alt="Training Image">
-          </picture>
-          <picture>
-            <source srcset="img/inthewild/inthewild_mk-lift.jpg" media="(max-width: 767px)">
-              <img src="img/inthewild/inthewild_mk-lift.jpg" alt="Training Image">
-          </picture>
-          <picture>
-            <source srcset="img/inthewild/inthewild_gdc-senior-co.jpg" media="(max-width: 767px)">
-              <img src="img/inthewild/inthewild_gdc-senior-co.jpg" alt="Training Image">
-          </picture>
-        </div>
+        </div><!--End of Dance Container/row-->
+      </div> <!--End Dance section-->
+      <div id="wild" class="container"><!--In The Wild-->
+        <h2>#InTheWild</h2>
+        <picture>
+          <source srcset="img/inthewild/inthewild_nk.jpg" media="(max-width: 767px)">
+            <img src="img/inthewild/inthewild_nk.jpg" alt="Training Image">
+        </picture>
+        <picture>
+          <source srcset="img/inthewild/inthewild_lab-dress.jpg" media="(max-width: 767px)">
+            <img src="img/inthewild/inthewild_lab-dress.jpg" alt="Training Image">
+        </picture>
+        <picture>
+          <source srcset="img/inthewild/inthewild_crashco.jpg" media="(max-width: 767px)">
+            <img src="img/inthewild/inthewild_crashco.jpg" alt="Training Image">
+        </picture>
+        <picture>
+          <source srcset="img/inthewild/inthewild_mk-lift.jpg" media="(max-width: 767px)">
+            <img src="img/inthewild/inthewild_mk-lift.jpg" alt="Training Image">
+        </picture>
+        <picture>
+          <source srcset="img/inthewild/inthewild_gdc-senior-co.jpg" media="(max-width: 767px)">
+            <img src="img/inthewild/inthewild_gdc-senior-co.jpg" alt="Training Image">
+        </picture>
+      </div><!--End In the Wild-->
     </main>
-<!--Footer-->
     <footer>
-      <div>
+      <div class="container row">
         <div> <!--Connect-->
           <h3>Connect</h3>
           <p>Thanks for visiting my website! Feel free to email, connect or follow.</p>
-          <a href="https://www.linkedin.com/in/kia-hill-47574653/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="61.999" viewBox="0 0 62 61.999">
-            <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M13.878,62H1.024V20.606H13.878ZM7.444,14.96a7.48,7.48,0,1,1,7.444-7.515A7.507,7.507,0,0,1,7.444,14.96ZM61.986,62H49.16V41.849c0-4.8-.1-10.961-6.683-10.961-6.683,0-7.707,5.217-7.707,10.615V62H21.93V20.606H34.258v5.646h.18C36.154,23,40.346,19.568,46.6,19.568c13.009,0,15.4,8.567,15.4,19.693V62Z" transform="translate(0 -0.001)"/>
-          </svg></a>
-          <a href="https://www.instagram.com/kia.christine/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62">
-            <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M31,17.342a15.9,15.9,0,1,0,15.892,15.9A15.869,15.869,0,0,0,31,17.342Zm0,26.231A10.334,10.334,0,1,1,41.334,33.238,10.352,10.352,0,0,1,31,43.572ZM51.251,16.691a3.707,3.707,0,1,1-3.707-3.708A3.7,3.7,0,0,1,51.251,16.691Zm10.526,3.763c-.235-4.967-1.369-9.366-5.007-12.991S48.748,2.7,43.782,2.456c-5.118-.291-20.457-.291-25.575,0-4.952.235-9.35,1.37-12.988,4.994S.462,15.474.213,20.441c-.29,5.119-.29,20.461,0,25.58.235,4.967,1.369,9.366,5.007,12.991s8.022,4.759,12.988,5.008c5.118.291,20.457.291,25.575,0,4.966-.235,9.364-1.37,12.988-5.008s4.758-8.024,5.007-12.991c.29-5.119.29-20.448,0-25.566ZM55.165,51.513a10.462,10.462,0,0,1-5.892,5.894C45.193,59.025,35.511,58.652,31,58.652s-14.205.36-18.271-1.245a10.462,10.462,0,0,1-5.892-5.894C5.22,47.432,5.593,37.748,5.593,33.238S5.233,19.03,6.838,14.962A10.462,10.462,0,0,1,12.73,9.069C16.81,7.45,26.493,7.823,31,7.823s14.205-.36,18.271,1.245a10.462,10.462,0,0,1,5.892,5.894c1.618,4.081,1.245,13.765,1.245,18.276S56.784,47.446,55.165,51.513Z" transform="translate(0.005 -2.238)"/>
-          </svg></a>
-          <a href="mailto:kiachristine4@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="64.117" height="51.294" viewBox="0 0 64.117 51.294">
-            <path id="Icon_material-email" data-name="Icon material-email" d="M60.706,6H9.412a6.4,6.4,0,0,0-6.38,6.412L3,50.882a6.431,6.431,0,0,0,6.412,6.412H60.706a6.431,6.431,0,0,0,6.412-6.412V12.412A6.431,6.431,0,0,0,60.706,6Zm0,12.823L35.059,34.853,9.412,18.823V12.412L35.059,28.441,60.706,12.412Z" transform="translate(-3 -6)"/>
-          </svg></a>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/kia-hill-47574653/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+            <a href="https://www.instagram.com/kia.christine/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            <a href="mailto:kiachristine4@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg></a>
+          </div>
         </div>
         <div> <!--Pronunciation-->
           <h3>Made Before the Car</h3>

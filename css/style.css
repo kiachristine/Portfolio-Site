@@ -3,7 +3,11 @@ Colors
   Primary: Black #000000 and White #FFFFFF
   Secondary: Magenta #AA006F
   Tertiary-Hover: Magenta #7C0051
+  Light Grey: #DEDEDE
 */
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -23,12 +27,12 @@ h1 {
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 500;
 }
 h4 {
   font-size: 1.35em;
@@ -38,27 +42,29 @@ img {
   width: 100%;
 }
 a {
-  color: #AA006F;
+  color: #FFFFFF;
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #AA006F;
+  color: #FFFFFF;
 }
 a:hover,
 a:focus {
-  color: #AA006F;
+  color: #FFFFFF;
   font-weight: 400;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-  color: #AA006F;
+  color: #FFFFFF;
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #AA006F;
   color: #FFFFFF; /* needed to override the default link color */
+  text-align: center;
   font-weight: 400;
   padding: 10px;
+  margin-top: 20px;
   border-radius: 3px;
   transition: 0.2s opacity;
 }
@@ -73,6 +79,7 @@ a:active { /* selected link */
   color: #AA006F;
   font-weight: 400;
   padding: 10px;
+  margin-top: 20px;
   border-radius: 3px;
   border: 2px solid #000000;
   transition: 0.2s opacity;
@@ -83,4 +90,239 @@ a:active { /* selected link */
   background-color: #aa006f;
   color: #FFFFFF;
   opacity: 0.8;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  -webkit-box-shadow: 0px 8px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 8px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 8px 5px 0px rgba(50, 50, 50, 0.75);
+  width: 100%;
+}
+main {
+  padding-top: 100px;
+  margin: 0;
+}
+
+.logo {
+  max-width: 250px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+nav > ul > li {display: inline-block;}
+nav > ul > li > a {
+  padding: 0 15px;
+  font-weight: 300;
+  color: #white;
+}
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  font-weight: 300;
+  color: #white;
+}
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-decoration: underline;
+  font-weight: 300;
+  color: #white;
+}
+nav > ul > li > a:focus {
+  padding: 0 15px;
+  text-decoration: underline;
+  font-weight: 300;
+  color: #white;
+}
+nav > ul > li > a:active {
+  padding: 0 15px;
+  text-decoration: underline;
+  font-weight: 300;
+  color: #white;
+}
+
+/* Layout Styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#design .row { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
+#dance .row { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
+
+#hero h1 {text-align: left;}
+#hero {
+  background-color: #DEDEDE;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+#hero span {
+  color: #AA006F;
+}
+
+#infinite {
+  display: inline-block;
+  border-radius: 3px;
+  border: 2px solid #000000;
+  border-color: #000000;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+#infinite h4 {
+  margin: 0;
+}
+#infinite a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+#kelle {
+  display: inline-block;
+  border-radius: 3px;
+  border: 2px solid #000000;
+  border-color: #000000;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+#kelle h4 {
+  margin: 0;
+}
+#kelle a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+#project-page-link a {
+  color: #AA006F;
+  font-weight: 400;
+  position: static;
+  float: right;
+  padding: 20px 0;
+}
+
+#performance {
+  display: inline-block;
+  border-radius: 3px;
+  border: 2px solid #000000;
+  border-color: #000000;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+#performance h4 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+#performance a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 300;
+}
+#choreography {
+  display: inline-block;
+  border-radius: 3px;
+  border: 2px solid #000000;
+  border-color: #000000;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+#choreography h4 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+#choreography a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 300;
+}
+#training {
+  display: inline-block;
+  border-radius: 3px;
+  border: 2px solid #000000;
+  border-color: #000000;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+#training h4 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+#training a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 300;
+}
+#dance-page-link a {
+  color: #AA006F;
+  font-weight: 400;
+  position: static;
+  float: right;
+  padding: 20px 0;
+}
+footer {
+  padding: 10px;
+  background-color: #DEDEDE;
+}
+
+.social a{
+  display: inline-block;
+  margin: 0 5px;
+}
+.social svg{
+  width: 50px;
+  height: auto;
+}
+/*About Page*/
+#work {
+  display: inline-block;
+}
+#work h4 {
+  font-weight: 500;
+  padding-bottom: 5px;
+  margin: 0;
+}
+#work p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+#education {
+  display: inline-block;
+}
+#education h4 {
+  font-weight: 500;
+  padding-bottom: 5px;
+  margin: 0;
+}
+#education p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+#about { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
+
+#kelle-link a {
+  color: #AA006F;
+  font-weight: 400;
+  position: static;
+  padding: 20px 0;
+}
+#dance-to-ux svg{
+  width: 50px;
+  height: auto;
+}
+
+/*Kelle Project*/
+#page-nav {
+  display: none;
 }
