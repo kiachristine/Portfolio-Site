@@ -326,3 +326,18 @@ footer {
 #page-nav {
   display: none;
 }
+blockquote {
+  font-style: italic;
+  padding: 10px 0;
+  border-top: 1px solid #4a4a4a;
+  border-bottom: 1px solid #4a4a4a;
+}
+#kelle-social a{
+  display: inline-block;
+  margin: 0 5px;
+  color: black;
+}
+#kelle-social svg{
+  width: 50px;
+  height: auto;
+}
