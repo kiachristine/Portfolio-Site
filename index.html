@@ -26,15 +26,18 @@
       </div>
     </header>
     <main>
-      <div id="hero"><!--Hero/Intro Section-->
+      <div class="hero"><!--Hero/Intro Section-->
         <div class="container row">
-          <h1>Hi, my name is <span>Kia</span>.</h1>
-          <h2>I am a UX/UI designer, dancer, choreographer and movement specialist.</h2>
-          <p>Aristically driven and deeply empathetic, my work is a fusion of my background in the arts, with my design experiences in print, product and digital spaces.</p>
-          <picture>
-            <source srcset="img/headshots/headshot_2.jpg" media="(max-width: 767px)">
+          <div>
+            <h1>Hi, my name is <span>Kia</span>.<br>I am a UX/UI designer, dancer, choreographer and movement specialist.</br></h1>
+            <p>Aristically driven and deeply empathetic, my work is a fusion of my background in the arts, with my design experiences in print, product and digital spaces.</p>
+          </div>
+          <div>
+            <picture>
+              <source srcset="img/headshots/headshot_2.jpg" media="(max-width: 767px)">
               <img src="img/headshots/headshot_2@2x.jpg" alt="Kia Christine's Headshot">
-          </picture>
+            </picture>
+          </div>
           <div>
             <a href="about.html" class="button">Learn More</a>
           </div>
@@ -47,17 +50,17 @@
           <p>Here are a few featured projects I have worked on in the past. Please note that some of these projects are still a work in progress. These project examples range from personal work to print design, digital design and product development.</p>
         </div>
         <div class="container row">
-          <div id="infinite"><a href="#"><!--Infinite Project-->
+          <div id="infinite" class="project-card"><a href="#"><!--Infinite Project-->
             <h4>Infinite</h4>
             <p>UX/UI Design</p>
             <picture>
-              <source srcset="img/infinite/infinite_mobile-screens.png" media="(max-width: 767px)">
+              <source srcset="img/infinite/infinite_mobile-screens@2x.png" media="(max-width: 767px)">
                 <img src="img/infinite/infinite_mobile-screens@2x.png" alt="Infinite Mobile Screens">
             </picture>
             <p>INFINITE is an app designed to aid anxiety and stress through the synchronization of body and mind. I  was responsible for the responsive web application design, research, testing and implementation of the entire project.</p>
             </a>
           </div>
-          <div id="kelle"><a href="kelleco.html"><!--Kelle Project-->
+          <div id="kelle" class="project-card"><a href="kelleco.html"><!--Kelle Project-->
             <h4>Kellé Company</h4>
             <p>Print Design</p>
             <picture>
@@ -67,7 +70,7 @@
             <p>Kellé Company, a leader in the performance dancewear industry, designs and manufactures apparel for dance recitals and competitions. I am the main chorographer and on set designer for all catalog production.</p>
             </a>
           </div>
-          <div id="project-page-link">  <!--link to project page-->
+          <div class="right-link" id="project-page-link">  <!--link to project page-->
             <a href="#">View All Projects</a>
           </div>
         </div><!--End Project Columns-->
@@ -79,7 +82,7 @@
           <p>With an extensive background in dance and the fine arts, with a degree from Loyola Marymount University in Los Angeles, CA, my work specializes in performance, choreography, and movement training. Check out my work below!</p>
         </div>
         <div class="container row"><!--Start 3 Dance Columns-->
-          <div id="performance"><a href="#"><!--Peformance-->
+          <div class="project-card" id="performance"><a href="#"><!--Peformance-->
             <h4>Performance</h4>
             <picture>
               <source srcset="img/dance/performance/proxy_2019-jump.jpg" media="(max-width: 767px)">
@@ -88,7 +91,7 @@
             <p>Works that I have appeared in exist in both the commercial and concert realms of dance. I am currently performing with Crash Dance Productions, a well-known contemporary company out of Minneapolis, MN.</p>
             </a>
           </div>
-          <div id="choreography"><a href="#"><!--Choreography-->
+          <div class="project-card" id="choreography"><a href="#"><!--Choreography-->
             <h4>Choreography</h4>
             <picture>
               <source srcset="img/dance/choreography/choreo_soldier.jpg" media="(max-width: 767px)">
@@ -97,7 +100,7 @@
             <p>Holding numerous choreographic awards and accolades, my work ranges from concert dance pieces and full length shows, to high school and collegiate regional and national competitive pieces.</p>
             </a>
           </div>
-          <div id="training"><a href="#"><!--Training-->
+          <div class="project-card" id="training"><a href="#"><!--Training-->
             <h4>Training</h4>
             <picture>
               <source srcset="img/dance/training/train_pilates-chair.jpg" media="(max-width: 767px)">
@@ -106,7 +109,7 @@
             <p>With over 10+ years of teaching and training, I specialize in helping the body and mind to obtain longevity, mobility and strength through progressive functional fitness and dance training methods.</p>
             </a>
           </div>
-          <div id="dance-page-link"><!--Link to Dance Page-->
+          <div class="right-link" id="dance-page-link"><!--Link to Dance Page-->
             <a href="#">Learn More</a>
           </div>
         </div><!--End of Dance Container/row-->
@@ -137,8 +140,8 @@
     </main>
     <footer>
       <div class="container row">
-        <div> <!--Connect-->
-          <h3>Connect</h3>
+        <div class="col-md-6"> <!--Connect-->
+          <h4>Connect</h4>
           <p>Thanks for visiting my website! Feel free to email, connect or follow.</p>
           <div class="social">
             <a href="https://www.linkedin.com/in/kia-hill-47574653/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
@@ -146,8 +149,8 @@
             <a href="mailto:kiachristine4@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg></a>
           </div>
         </div>
-        <div> <!--Pronunciation-->
-          <h3>Made Before the Car</h3>
+        <div id="pronunciation" class="col-md-6"> <!--Pronunciation-->
+          <h4>Made Before the Car</h4>
           <p>Ky-uh</p>
           <p>Copyright Kia Christine 2021</p>
         </div>
