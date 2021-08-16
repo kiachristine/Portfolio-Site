@@ -41,23 +41,28 @@ h4 {
 img {
   width: 100%;
 }
+
+/*buttons & links*/
 a {
-  color: #FFFFFF;
+  color: #AA006F;
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #FFFFFF;
+  color: #AA006F;
 }
-a:hover,
-a:focus {
-  color: #FFFFFF;
+a:hover {
+  color: #AA006F;
   font-weight: 400;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
-  color: #FFFFFF;
+a:focus {
+  color: #AA006F;
+  font-weight: 400;
 }
-.button {
+a:active { /* selected link */
+  color: #AA006F;
+}
+a.button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #AA006F;
   color: #FFFFFF; /* needed to override the default link color */
@@ -65,15 +70,16 @@ a:active { /* selected link */
   font-weight: 400;
   padding: 10px;
   margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 3px;
   transition: 0.2s opacity;
 }
-.button:hover,
-.button:active {
+a.button:hover,
+a.button:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-.button-secondary {
+a.button-secondary {
   display: inline-block;
   background-color: #FFFFFF;
   color: #AA006F;
@@ -85,11 +91,26 @@ a:active { /* selected link */
   transition: 0.2s opacity;
   border-color: #AA006F;
 }
-.button-secondary:hover,
-.button-secondary:active {
+a.button-secondary:hover,
+a.button-secondary:active {
   background-color: #aa006f;
   color: #FFFFFF;
   opacity: 0.8;
+}
+.right-link {
+  overflow: hidden;
+}
+.right-link a {
+  color: #AA006F;
+  font-weight: 500;
+  float: right;
+  padding: 20px 0;
+}
+#dance-page-link {
+  clear: both;
+}
+#project-page-link {
+  clear: both;
 }
 
 header {
@@ -108,11 +129,12 @@ main {
   margin: 0;
 }
 
-.logo {
+a.logo {
   max-width: 250px;
   text-transform: uppercase;
   font-weight: 500;
-  color: white;}
+  color: #FFFFFF;
+}
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -123,18 +145,18 @@ nav > ul > li {display: inline-block;}
 nav > ul > li > a {
   padding: 0 15px;
   font-weight: 300;
-  color: #white;
+  color: #FFFFFF;
 }
 nav > ul > li > a:visited {
   padding: 0 15px;
   font-weight: 300;
-  color: #white;
+  color: #FFFFFF;
 }
 nav > ul > li > a:hover {
   padding: 0 15px;
   text-decoration: underline;
   font-weight: 300;
-  color: #white;
+  color: #FFFFFF;
 }
 nav > ul > li > a:focus {
   padding: 0 15px;
@@ -146,7 +168,7 @@ nav > ul > li > a:active {
   padding: 0 15px;
   text-decoration: underline;
   font-weight: 300;
-  color: #white;
+  color: #FFFFFF;
 }
 
 /* Layout Styling */
@@ -160,77 +182,27 @@ nav > ul > li > a:active {
 #design .row { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
 #dance .row { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
 
-#hero h1 {text-align: left;}
-#hero {
+.hero h1 {text-align: center;}
+.hero {
   background-color: #DEDEDE;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
-#hero span {
+.hero span {
   color: #AA006F;
 }
 
-#infinite {
-  display: inline-block;
-  border-radius: 3px;
-  border: 2px solid #000000;
-  border-color: #000000;
-  padding: 20px 20px;
-  margin-top: 20px;
-}
-#infinite h4 {
-  margin: 0;
-}
-#infinite a{
-  color: #000000;
-  text-decoration: none;
-  font-weight: 300;
-}
-
-#kelle {
-  display: inline-block;
-  border-radius: 3px;
-  border: 2px solid #000000;
-  border-color: #000000;
-  padding: 20px 20px;
-  margin-top: 20px;
-}
-#kelle h4 {
-  margin: 0;
-}
-#kelle a{
-  color: #000000;
-  text-decoration: none;
-  font-weight: 300;
-}
-
-#project-page-link a {
-  color: #AA006F;
-  font-weight: 400;
-  position: static;
-  float: right;
-  padding: 20px 0;
-}
-
-#performance {
-  display: inline-block;
-  border-radius: 3px;
-  border: 2px solid #000000;
-  border-color: #000000;
-  padding: 20px 20px;
-  margin-top: 20px;
-}
-#performance h4 {
+.project-card h4 {
   margin: 0;
   padding-bottom: 10px;
 }
-#performance a{
+
+.project-card a{
   color: #000000;
-  text-decoration: none;
-  font-weight: 300;
 }
-#choreography {
+.project-card {
   display: inline-block;
   border-radius: 3px;
   border: 2px solid #000000;
@@ -238,42 +210,14 @@ nav > ul > li > a:active {
   padding: 20px 20px;
   margin-top: 20px;
 }
-#choreography h4 {
-  margin: 0;
-  padding-bottom: 10px;
-}
-#choreography a{
-  color: #000000;
-  text-decoration: none;
-  font-weight: 300;
-}
-#training {
-  display: inline-block;
-  border-radius: 3px;
-  border: 2px solid #000000;
-  border-color: #000000;
-  padding: 20px 20px;
-  margin-top: 20px;
-}
-#training h4 {
-  margin: 0;
-  padding-bottom: 10px;
-}
-#training a{
-  color: #000000;
-  text-decoration: none;
-  font-weight: 300;
-}
-#dance-page-link a {
-  color: #AA006F;
-  font-weight: 400;
-  position: static;
-  float: right;
-  padding: 20px 0;
-}
+
 footer {
   padding: 10px;
   background-color: #DEDEDE;
+}
+
+footer h4{
+  margin-top: 0;
 }
 
 .social a{
@@ -284,6 +228,26 @@ footer {
   width: 50px;
   height: auto;
 }
+
+/*Photo Grids*/
+.gallery-2col {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.gallery-2col img {
+  display: block;
+}
+.div1 { grid-area: 1 / 1 / 3 / 2; }
+.div2 { grid-area: 3 / 1 / 5 / 2; }
+.div3 { grid-area: 1 / 2 / 2 / 3; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 3 / 2 / 4 / 3; }
+.div6 { grid-area: 4 / 2 / 5 / 3; }
+
 /*About Page*/
 #work {
   display: inline-block;
@@ -311,19 +275,15 @@ footer {
 }
 #about { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
 
-#kelle-link a {
-  color: #AA006F;
-  font-weight: 400;
-  position: static;
-  padding: 20px 0;
-}
-#dance-to-ux svg{
+#right-arrow svg{
   width: 50px;
   height: auto;
+  display: inline-block;
+  justify-content: center;
 }
 
 /*Kelle Project*/
-#page-nav {
+#kelle-nav {
   display: none;
 }
 blockquote {
@@ -331,13 +291,97 @@ blockquote {
   padding: 10px 0;
   border-top: 1px solid #4a4a4a;
   border-bottom: 1px solid #4a4a4a;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-#kelle-social a{
+.project-social a{
   display: inline-block;
   margin: 0 5px;
   color: black;
 }
-#kelle-social svg{
+.project-social svg{
   width: 50px;
   height: auto;
+  float: left;
 }
+
+.project-social span{
+  display:inline-block;
+  float: left;
+}
+
+.project-insta span{
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.project-web span{
+  margin-top: 10px;
+  padding-left: 10px;
+}
+#kelle-catalog-link {
+  display: inline-inline-block;
+  float: right;
+}
+
+/*Media Queries*/
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media only screen and (min-width: 640px) {
+  header {
+   text-align: unset;
+   }
+   nav {
+     width: auto;
+     float: right;
+     margin-top: 4px;
+   }
+   .logo {
+     margin: 18px 0;
+     display: inline;
+     float: left;
+     height: auto;
+   }
+   main {
+     padding-top: 99px 0;
+   }
+   body {
+     font-size: 18px;
+   }
+   .col-md-6 {
+     width: 50%;
+   }
+   .col-md-7 {
+     width: 58.33%;
+   }
+   .col-md-4 {
+     width: 33.33%;
+   }
+   .col-md-3 {
+     width: 25%;
+   }
+
+}
+@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1440px) {}
