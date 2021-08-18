@@ -54,8 +54,7 @@ a:visited { /* visited link */
 a:hover {
   color: #AA006F;
   font-weight: 400;
-  text-decoration: underline;
-  font-size: 18px;/* Underlining when hovering over a link */
+  text-decoration: underline;/* Underlining when hovering over a link */
 }
 a:focus {
   color: #AA006F;
@@ -74,7 +73,7 @@ a.button {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 3px;
-  transition: 0.2s opacity, .4s font-size;
+  transition: 0.2s opacity;
 }
 a.button:hover,
 a.button:active {
@@ -131,6 +130,7 @@ header {
 main {
   padding-top: 100px;
   margin: 0;
+  overflow: hidden;
 }
 
 a.logo {
@@ -191,8 +191,8 @@ img {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#design .row { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
-#dance .row { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
+#project-page-link { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
+#dance-page-link { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
 
 .hero h1 {text-align: center;}
 .hero {
@@ -216,7 +216,7 @@ img {
 }
 .project-card a:hover {
   text-decoration: none;
-  font-size: auto;
+  font-weight: 300;
 }
 .project-card {
   display: inline-block;
@@ -370,7 +370,13 @@ blockquote {
   display: inline-inline-block;
   float: right;
 }
-
+.fleximg img {
+  display: block;
+  max-height: 90vh;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
 /*CSS Animation Project*/
 .berlin-illustration {
   width: 100%;
@@ -460,9 +466,6 @@ blockquote {
    .hero {
      text-align: center;
    }
-   main {
-     padding-top: 99px 0;
-   }
    body {
      font-size: 18px;
    }
@@ -502,10 +505,14 @@ blockquote {
        height: auto;
      }
      main {
-       padding-top: 99px 0;
+       padding-top: 85px;
      }
      body {
        font-size: 18px;
+     }
+     .project-card a:hover {
+       text-decoration: none;
+       font-weight: 300;
      }
      .col-ld-1 {width: 8.33%;}
      .col-ld-2 {width: 16.66%;}
@@ -533,6 +540,16 @@ blockquote {
        float: right;
        margin-top: 40px;
        margin-bottom: 40px;
+     }
+     .project-grid {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 20px;
+     }
+     .project-grid-3 {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-gap: 20px;
      }
 }
 @media only screen and (min-width: 1440px) {}
