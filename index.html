@@ -27,21 +27,23 @@
     </header>
     <main>
       <div class="hero"><!--Hero/Intro Section-->
-        <div class="container row">
-          <div>
-            <h1>Hi, my name is <span>Kia</span>.<br>I am a UX/UI designer, dancer, choreographer and movement specialist.</br></h1>
+        <div class="container row" id="main-hero">
+          <div class="col-ld-7">
+            <h1>Hi, my name is <span>Kia</span>.</h1>
+              <h3>I am a UX/UI designer, dancer, choreographer and movement specialist.</h3>
             <p>Aristically driven and deeply empathetic, my work is a fusion of my background in the arts, with my design experiences in print, product and digital spaces.</p>
+            <div>
+              <a href="about.html" class="button" id="main-learn-more">Learn More</a>
+            </div>
           </div>
-          <div>
-            <picture>
+          <div class="col-ld-5">
+            <picture id="headshot">
               <source srcset="img/headshots/headshot_2.jpg" media="(max-width: 767px)">
               <img src="img/headshots/headshot_2@2x.jpg" alt="Kia Christine's Headshot">
             </picture>
           </div>
-          <div>
-            <a href="about.html" class="button">Learn More</a>
-          </div>
         </div>
+
       </div>
       <div id="design"><!--Design Section-->
         <div class="container">
@@ -50,7 +52,7 @@
           <p>Here are a few featured projects I have worked on in the past. Please note that some of these projects are still a work in progress. These project examples range from personal work to print design, digital design and product development.</p>
         </div>
         <div class="container row">
-          <div id="infinite" class="project-card"><a href="#"><!--Infinite Project-->
+          <div id="infinite" class="project-card col-ld-6"><a href="#"><!--Infinite Project-->
             <h4>Infinite</h4>
             <p>UX/UI Design</p>
             <picture>
@@ -60,7 +62,7 @@
             <p>INFINITE is an app designed to aid anxiety and stress through the synchronization of body and mind. I  was responsible for the responsive web application design, research, testing and implementation of the entire project.</p>
             </a>
           </div>
-          <div id="kelle" class="project-card"><a href="kelleco.html"><!--Kelle Project-->
+          <div id="kelle" class="project-card col-ld-6"><a href="kelleco.html"><!--Kelle Project-->
             <h4>Kellé Company</h4>
             <p>Print Design</p>
             <picture>
@@ -82,7 +84,7 @@
           <p>With an extensive background in dance and the fine arts, with a degree from Loyola Marymount University in Los Angeles, CA, my work specializes in performance, choreography, and movement training. Check out my work below!</p>
         </div>
         <div class="container row"><!--Start 3 Dance Columns-->
-          <div class="project-card" id="performance"><a href="#"><!--Peformance-->
+          <div class="project-card col-ld-4" id="performance"><a href="#"><!--Peformance-->
             <h4>Performance</h4>
             <picture>
               <source srcset="img/dance/performance/proxy_2019-jump.jpg" media="(max-width: 767px)">
@@ -91,7 +93,7 @@
             <p>Works that I have appeared in exist in both the commercial and concert realms of dance. I am currently performing with Crash Dance Productions, a well-known contemporary company out of Minneapolis, MN.</p>
             </a>
           </div>
-          <div class="project-card" id="choreography"><a href="#"><!--Choreography-->
+          <div class="project-card col-ld-4" id="choreography"><a href="#"><!--Choreography-->
             <h4>Choreography</h4>
             <picture>
               <source srcset="img/dance/choreography/choreo_soldier.jpg" media="(max-width: 767px)">
@@ -100,7 +102,7 @@
             <p>Holding numerous choreographic awards and accolades, my work ranges from concert dance pieces and full length shows, to high school and collegiate regional and national competitive pieces.</p>
             </a>
           </div>
-          <div class="project-card" id="training"><a href="#"><!--Training-->
+          <div class="project-card col-ld-4" id="training"><a href="#"><!--Training-->
             <h4>Training</h4>
             <picture>
               <source srcset="img/dance/training/train_pilates-chair.jpg" media="(max-width: 767px)">
@@ -116,26 +118,44 @@
       </div> <!--End Dance section-->
       <div id="wild" class="container"><!--In The Wild-->
         <h2>#InTheWild</h2>
-        <picture>
-          <source srcset="img/inthewild/inthewild_nk.jpg" media="(max-width: 767px)">
-            <img src="img/inthewild/inthewild_nk.jpg" alt="Training Image">
-        </picture>
-        <picture>
-          <source srcset="img/inthewild/inthewild_lab-dress.jpg" media="(max-width: 767px)">
-            <img src="img/inthewild/inthewild_lab-dress.jpg" alt="Training Image">
-        </picture>
-        <picture>
-          <source srcset="img/inthewild/inthewild_crashco.jpg" media="(max-width: 767px)">
-            <img src="img/inthewild/inthewild_crashco.jpg" alt="Training Image">
-        </picture>
-        <picture>
-          <source srcset="img/inthewild/inthewild_mk-lift.jpg" media="(max-width: 767px)">
-            <img src="img/inthewild/inthewild_mk-lift.jpg" alt="Training Image">
-        </picture>
-        <picture>
-          <source srcset="img/inthewild/inthewild_gdc-senior-co.jpg" media="(max-width: 767px)">
-            <img src="img/inthewild/inthewild_gdc-senior-co.jpg" alt="Training Image">
-        </picture>
+        <div class="gallery-2col">
+          <div class="div1 divstretch">
+            <picture>
+              <source srcset="img/inthewild/inthewild_nk.jpg" media="(max-width: 767px)">
+                <img src="img/inthewild/inthewild_nk.jpg" alt="Training Image">
+            </picture>
+          </div>
+          <div class="div2 divstretch">
+            <picture>
+              <source srcset="img/inthewild/inthewild_lab-dress.jpg" media="(max-width: 767px)">
+                <img src="img/inthewild/inthewild_lab-dress.jpg" alt="Training Image">
+            </picture>
+          </div>
+          <div class="div3">
+            <picture>
+              <source srcset="img/inthewild/inthewild_crashco.jpg" media="(max-width: 767px)">
+                <img src="img/inthewild/inthewild_crashco.jpg" alt="Training Image">
+            </picture>
+          </div>
+          <div class="div4">
+            <picture>
+              <source srcset="img/inthewild/inthewild_mk-lift.jpg" media="(max-width: 767px)">
+                <img src="img/inthewild/inthewild_mk-lift.jpg" alt="Training Image">
+            </picture>
+          </div>
+          <div class="div5">
+            <picture>
+              <source srcset="img/inthewild/inthewild_gdc-senior-co.jpg" media="(max-width: 767px)">
+                <img src="img/inthewild/inthewild_gdc-senior-co.jpg" alt="Training Image">
+            </picture>
+          </div>
+          <div class="div6">
+            <picture>
+              <source srset="img/inthewild/inthewild_cdp2_rehearsal.jpeg" media="(max-width: 767px)">
+                <img src="img/inthewild/inthewild_cdp2_rehearsal.jpeg" alt="CDP2 Rehearsal Image">
+            </picture>
+          </div>
+        </div><!--end inthewild-grid-->
       </div><!--End In the Wild-->
     </main>
     <footer>
