@@ -46,6 +46,7 @@ img {
 a {
   color: #AA006F;
   text-decoration: none; /* No underlining */
+  transition: 0.2s opacity;
 }
 a:visited { /* visited link */
   color: #AA006F;
@@ -53,7 +54,8 @@ a:visited { /* visited link */
 a:hover {
   color: #AA006F;
   font-weight: 400;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  font-size: 18px;/* Underlining when hovering over a link */
 }
 a:focus {
   color: #AA006F;
@@ -72,7 +74,7 @@ a.button {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  transition: 0.2s opacity, .4s font-size;
 }
 a.button:hover,
 a.button:active {
@@ -146,6 +148,7 @@ nav > ul > li > a {
   padding: 0 15px;
   font-weight: 300;
   color: #FFFFFF;
+  transition: 0.2s underline;
 }
 nav > ul > li > a:visited {
   padding: 0 15px;
@@ -169,6 +172,13 @@ nav > ul > li > a:active {
   text-decoration: underline;
   font-weight: 300;
   color: #FFFFFF;
+}
+
+picture {
+  border-radius: 8px;
+}
+img {
+  border-radius: 8px;
 }
 
 /* Layout Styling */
@@ -233,11 +243,31 @@ footer h4{
 .gallery-2col {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(4, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
+margin-bottom: 20px;
+margin-top: 20px;
+padding: 20px 20px;
 }
-
+.gallery-2col .divstretch {
+  position: relative;
+}
+.gallery-2col .divstretch picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.gallery-2col .divstretch img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .gallery-2col img {
   display: block;
 }
@@ -281,6 +311,10 @@ grid-row-gap: 0px;
   display: inline-block;
   justify-content: center;
 }
+#dance-to-ux {
+  display: block;
+  text-align: center;
+}
 
 /*Kelle Project*/
 #kelle-nav {
@@ -319,10 +353,14 @@ blockquote {
   margin-top: 10px;
   padding-left: 10px;
 }
+.project-social-web {
+  margin-top: 10px;
+}
 #kelle-catalog-link {
   display: inline-inline-block;
   float: right;
 }
+
 
 /*Media Queries*/
 [class*="col-"] {
@@ -330,27 +368,34 @@ blockquote {
   padding-left: 10px;
   padding-right: 10px;
 }
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+.hero h3{
+  margin-top: 0;
+  font-weight: 500;
+}
+#pronunciation {
+  text-align: right;
+}
+@media only screen and (max-width: 639px){
+  #kelle-nav {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 640px) {
   header {
    text-align: unset;
+   z-index: 10;
    }
    nav {
      width: auto;
@@ -363,25 +408,85 @@ blockquote {
      float: left;
      height: auto;
    }
+   .hero h1 {
+     margin-bottom: 10px;
+   }
+   .hero {
+     text-align: center;
+   }
    main {
      padding-top: 99px 0;
    }
    body {
      font-size: 18px;
    }
-   .col-md-6 {
-     width: 50%;
-   }
-   .col-md-7 {
-     width: 58.33%;
-   }
-   .col-md-4 {
-     width: 33.33%;
-   }
-   .col-md-3 {
-     width: 25%;
-   }
+   .col-md-1 {width: 8.33%;}
+   .col-md-2 {width: 16.66%;}
+   .col-md-3 {width: 25%;}
+   .col-md-4 {width: 33.33%;}
+   .col-md-5 {width: 41.66%;}
+   .col-md-6 {width: 50%;}
+   .col-md-7 {width: 58.33%;}
+   .col-md-8 {width: 66.66%;}
+   .col-md-9 {width: 75%;}
+   .col-md-10 {width: 83.33%;}
+   .col-md-11 {width: 91.66%;}
+   .col-md-12 {width: 100%;}
+   #dance-to-ux {
+     display: inline-block;
 
+   }
+   #kelle-nav {
+     display: none;
+   }
 }
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    header {
+     text-align: unset;
+     }
+     nav {
+       width: auto;
+       float: right;
+       margin-top: 4px;
+     }
+     .logo {
+       margin: 18px 0;
+       display: inline;
+       float: left;
+       height: auto;
+     }
+     main {
+       padding-top: 99px 0;
+     }
+     body {
+       font-size: 18px;
+     }
+     .col-ld-1 {width: 8.33%;}
+     .col-ld-2 {width: 16.66%;}
+     .col-ld-3 {width: 25%;}
+     .col-ld-4 {width: 33.33%;}
+     .col-ld-5 {width: 41.66%;}
+     .col-ld-6 {width: 50%;}
+     .col-ld-7 {width: 58.33%;}
+     .col-ld-8 {width: 66.66%;}
+     .col-ld-9 {width: 75%;}
+     .col-ld-10 {width: 83.33%;}
+     .col-ld-11 {width: 91.66%;}
+     .col-ld-12 {width: 100%;}
+     .hero {
+       text-align: left;
+     }
+     .hero h1 {
+       text-align: left;
+     }
+     #main-hero {
+       margin-bottom: 0;
+     }
+     #headshot {
+       display: inline-block;
+       float: right;
+       margin-top: 40px;
+       margin-bottom: 40px;
+     }
+}
 @media only screen and (min-width: 1440px) {}
