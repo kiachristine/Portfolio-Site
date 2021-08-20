@@ -46,7 +46,7 @@ img {
 a {
   color: #AA006F;
   text-decoration: none; /* No underlining */
-  transition: 0.2s opacity;
+  transition: all 0.2s ease;
 }
 a:visited { /* visited link */
   color: #AA006F;
@@ -167,7 +167,7 @@ nav > ul > li > a:focus {
   padding: 0 15px;
   text-decoration: underline;
   font-weight: 300;
-  color: #white;
+  color: #FFFFFF;
 }
 nav > ul > li > a:active {
   padding: 0 15px;
@@ -367,7 +367,7 @@ blockquote {
   margin-top: 10px;
 }
 #kelle-catalog-link {
-  display: inline-inline-block;
+  display: inline-block;
   float: right;
 }
 .fleximg img {
@@ -453,6 +453,9 @@ blockquote {
      width: auto;
      float: right;
      margin-top: 4px;
+   }
+   main {
+     padding-top: 88px;
    }
    .logo {
      margin: 18px 0;
