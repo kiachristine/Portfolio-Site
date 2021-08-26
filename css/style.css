@@ -116,19 +116,28 @@ a.button-secondary:active {
 .basic-link {
   font-weight: 500;
 }
+.fas {
+  color: #FFFFFF;
+}
+.fas-bars {
+  color: #FFFFFF;
+}
+.icon {
+  color: #FFFFFF;
+}
 header {
   background-color: black;
   color: white;
-  text-align: center;
   padding: 10px 0;
   position: fixed;
   -webkit-box-shadow: 0px 8px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px 8px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow:         0px 8px 5px 0px rgba(50, 50, 50, 0.75);
   width: 100%;
+  z-index: 999;
 }
 main {
-  padding-top: 100px;
+  padding-top: 45px;
   margin: 0;
   overflow: hidden;
 }
@@ -142,10 +151,9 @@ a.logo {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
-  width: 100%;
+  margin: 0;
 }
-nav > ul > li {display: inline-block;}
+
 nav > ul > li > a {
   padding: 0 15px;
   font-weight: 300;
@@ -174,6 +182,26 @@ nav > ul > li > a:active {
   text-decoration: underline;
   font-weight: 300;
   color: #FFFFFF;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+/* Hamburger icon disappeared after setting it to absolute? is this the same as my .rightlink?*/
+.icon {
+  overflow: hidden;
 }
 
 picture {
@@ -445,6 +473,16 @@ blockquote {
 }
 
 @media only screen and (min-width: 640px) {
+  nav > ul > li {display: inline-block;}
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+nav > ul {
+  margin: 1em 0;
+}
+.navtoggle li:last-child {
+  display: none;
+}
   header {
    text-align: unset;
    z-index: 10;
@@ -493,6 +531,15 @@ blockquote {
    }
 }
 @media only screen and (min-width: 1024px) {
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul {
+  margin: 1em 0;
+}
     header {
      text-align: unset;
      }
