@@ -128,7 +128,7 @@ a.button-secondary:active {
 header {
   background-color: black;
   color: white;
-  padding: 10px 0;
+  padding: 15px 0;
   position: fixed;
   -webkit-box-shadow: 0px 8px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px 8px 5px 0px rgba(50, 50, 50, 0.75);
@@ -192,16 +192,23 @@ nav > ul > li > a:active {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: -3px;
   font-size: 20px;
   padding-right: 0;
 }
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
 .navtoggle.responsive li  {
   display: block;
+  padding: 10px 0;
+  text-align: right;
+  border-top: 1px solid rgba(255,255,255, 0.5);
 }
-/* Hamburger icon disappeared after setting it to absolute? is this the same as my .rightlink?*/
-.icon {
-  overflow: hidden;
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 picture {
@@ -219,8 +226,8 @@ img {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#project-page-link { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
-#dance-page-link { padding-bottom: 60px; border-bottom: 1px solid #4a4a4a; }
+#project-page-link { padding-bottom: 20px; border-bottom: 1px solid #4a4a4a; }
+#dance-page-link { padding-bottom: 20px; border-bottom: 1px solid #4a4a4a; }
 
 .hero h1 {text-align: center;}
 .hero {
@@ -469,6 +476,9 @@ blockquote {
 @media only screen and (max-width: 639px){
   #kelle-nav {
     display: none;
+  }
+  #pronunciation {
+    padding-top: 20px;
   }
 }
 

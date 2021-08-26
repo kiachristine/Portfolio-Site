@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/fba3aee8d2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="author" content="Kia Christine">
     <meta name="description" content="Kia Christine UX/UI Designer dancer choreographer movement specialist Minneapolis MN">
     <title>Kia Christine Design and Dance</title>
   </head>
   <body>
-<!--Navigation-->
-    <header>
-      <div>
-        <a href="index.html">Kia Christine</a>
+    <header><!--Navigation-->
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo">Kia Christine</a>
         <nav>
           <ul>
             <li><a href="design.html"> Design </a></li>
             <li><a href="dance.html"> Dance </a></li>
             <li><a href="about.html"> About </a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
+        </div>
       </div>
     </header>
     <main>
