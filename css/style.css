@@ -483,6 +483,52 @@ blockquote {
 }
 
 @media only screen and (min-width: 640px) {
+  nav > ul > li > a {
+    margin: 0 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+    display: inline-block;
+  }
+  nav > ul > li > a:visited {
+    padding: 0 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+  }
+  nav > ul > li > a:hover {
+    margin: 0 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+    text-decoration: none;
+  }
+  nav > ul > li > a:focus {
+    margin: 0 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+  }
+  nav > ul > li > a:active {
+    margin: 0 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+  }
+  .current {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 8px 0;
+  }
+  a.logo:hover {
+    margin: 0 15px;
+    color: #FFFFFF;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+    text-decoration: none;
+  }
+
   nav > ul > li {display: inline-block;}
   .navtoggle li:not(:last-child) {
   display: inline-block;
@@ -541,6 +587,49 @@ nav > ul {
    }
 }
 @media only screen and (min-width: 1024px) {
+  nav > ul > li > a {
+    margin: 0 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+    display: inline-block;
+  }
+  nav > ul > li > a:visited {
+    padding: 0 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+  }
+  nav > ul > li > a:hover {
+    margin: 0 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+    text-decoration: none;
+  }
+  nav > ul > li > a:focus {
+    margin: 0 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+  }
+  nav > ul > li > a:active {
+    margin: 0 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+  }
+
+  a.logo:hover {
+    margin: 0 15px;
+    color: #FFFFFF;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+    text-decoration: none;
+  }
+
   .navtoggle li:not(:last-child) {
   display: inline-block;
 }
