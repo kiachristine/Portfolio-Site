@@ -11,7 +11,7 @@ Colors
 
 body {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial,Helvetica Neue,Helvetica,sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
   font-weight: 300;
@@ -29,6 +29,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  margin-top: 0;
 }
 
 h2 {
@@ -267,13 +268,12 @@ img {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 25px -10px;
   /* 25px top and bottom, 0 left and right */
 }
 
 #project-page-link {
   padding-bottom: 20px;
-  border-bottom: 1px solid #4a4a4a;
 }
 
 #dance-page-link {
@@ -291,6 +291,10 @@ img {
   display: inline-block;
   width: 100%;
   text-align: center;
+}
+
+.project-hero {
+  padding: 20px 15px;
 }
 
 .hero span {
@@ -463,8 +467,7 @@ blockquote {
   padding: 10px 0;
   border-top: 1px solid #4a4a4a;
   border-bottom: 1px solid #4a4a4a;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .project-social a {
@@ -612,6 +615,7 @@ blockquote {
     color: #FFFFFF;
     transition: all 0.2s ease;
     display: inline-block;
+    padding: 8px 0;
   }
 
   nav>ul>li>a:visited {
@@ -650,13 +654,18 @@ blockquote {
     padding: 8px 0;
   }
 
+  a.logo {
+    padding: 8px 0;
+  }
+
   a.logo:hover {
-    margin: 0 15px;
     color: #FFFFFF;
     border-bottom: 1px solid white;
     padding: 8px 0;
     text-decoration: none;
   }
+
+
 
   nav>ul>li {
     display: inline-block;
@@ -686,7 +695,7 @@ blockquote {
   }
 
   main {
-    padding-top: 88px;
+    padding-top: 100px;
   }
 
   .logo {
@@ -806,7 +815,6 @@ blockquote {
   }
 
   a.logo:hover {
-    margin: 0 15px;
     color: #FFFFFF;
     border-bottom: 1px solid white;
     padding: 8px 0;
@@ -843,7 +851,7 @@ blockquote {
   }
 
   main {
-    padding-top: 85px;
+    padding-top: 120px;
   }
 
   body {
