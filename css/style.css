@@ -142,6 +142,11 @@ a.button-secondary:active {
   clear: both;
 }
 
+.project-subhead {
+  font-weight: 300;
+  margin-top: 0;
+}
+
 .basic-link {
   font-weight: 500;
 }
@@ -412,7 +417,7 @@ footer h4 {
 
 #work h4 {
   font-weight: 500;
-  padding-bottom: 5px;
+  padding-bottom: 0;
   margin: 0;
 }
 
